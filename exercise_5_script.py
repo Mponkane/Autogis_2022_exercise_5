@@ -57,33 +57,3 @@ axes.ticklabel_format(style='plain')
 plt.tight_layout()
 plt.show()
 fig.savefig(fname=output_fig)
-
-
-
-
-# output_fig3 = "shopping_center_accessibility.png"
-
-
-
-# fd = ["data/TravelTimes_to_5902043_Myyrmanni.txt", "data/TravelTimes_to_5944003_Itis.txt"]
-# shopping_centers = ["Myyrmanni", "Itis"]
-# mode = ["PT","Car"]
-# mode_data_names = ["pt_r_t_cl", "car_r_t_cl"]
-# cols = ["pt_r_t", "car_r_t", "from_id", "to_id"]
-# fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(10,5), )
-# for i in range(len(fd)):
-#     for j in range(len(fd)):
-#         data = pd.read_csv(fd[i], usecols=cols, sep=";")
-#         data_geo = data.merge(data, how="inner", left_on="YKR_ID", right_on="from_id")
-#         data_geo.replace(-1.,np.nan, inplace=True)
-#         data_geo.dropna(inplace=True)
-#         classifier = mapclassify.UserDefined.make(bins=[5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60])
-#         data_geo[["pt_r_t_cl", "car_r_t_cl"]]= data_geo[["pt_r_t", "car_r_t"]].apply(classifier)
-#         axes[i][j].ticklabel_format(style='plain')
-#         axes[i][j].tick_params(labelsize=6.5)
-#         axes[i][j].set_title("{}- Classified travel times by {}".format(shopping_centers[i],mode[j]))
-#         data_geo.plot(column="{}".format(mode_data_names[j]), ax = axes[i][j], linewidth=0, legend=True,legend_kwds={'shrink': 0.5}, antialiased=False)
-# plt.tight_layout()
-
-
-# fig.savefig(fname=output_fig3)
