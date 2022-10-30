@@ -74,7 +74,15 @@ For both maps, think a bit about the audience of the map, and pay attention to y
   
   
   
-  
+## Grading
+
+- Problem 1: 8/8 points
+- Problem 2: 10/10 points
+- Problem 3: 1.5/2 points -> The files are in the docs folder but no description of them or links added to the index.md file.
+
+**Total: 19.5/20**
+
+Comments: Good job and nice maps!!  
   
   
   
